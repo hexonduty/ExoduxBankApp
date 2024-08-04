@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İletişim</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="icon" type="image/svg+xml" href="../ico/money-svgrepo-com.svg">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      .container{
+        margin-top: 100px;
+      }
+      .em {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body style="background-color: #24292e">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Exodux Bank</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Gezinme"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Ana Sayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="finance.html">Finans</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="exchange.html">Döviz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">İletişim</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <div class="btn-group">
+              <button type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Diller
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../contact.html">İngilizce</a></li>
+                <li><a class="dropdown-item active bg-dark" href="#">Türkçe</a></li>
+              </ul>
+            </div>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="login-options"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Giriş Seçenekleri
+              </a>
+              <ul class="dropdown-menu" id="user-menu">
+                <li><a class="dropdown-item loginText" href="#">Giriş Yap</a></li>
+                <li>
+                  <a class="dropdown-item registerText" href="#">Kayıt Ol</a>
+                </li>
+                <li>
+                  <a class="dropdown-item userMoneyText" href="#"
+                    >Bakiye: $0</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item log-out" href="#">Çıkış Yap</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <form class="d-flex ms-3" id="userSearchForm" role="search">
+                <input
+                  id="userSearch"
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Ara"
+                  aria-label="Ara"
+                />
+                <button class="btn btn-outline-light" id="userSearchButton" type="submit">
+                  Ara
+                </button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="form-floating mb-3">
+        <input
+          type="email"
+          class="form-control text-white bg-dark"
+          id="floatingInput"
+          placeholder="isim@example.com"
+        />
+        <label for="floatingInput" class="em bg-">E-posta adresi</label>
+      </div>
+      <div class="form-floating">
+        <input
+          type="password"
+          class="form-control text-white bg-dark"
+          id="floatingPassword"
+          placeholder="Şifre"
+        />
+        <label for="floatingPassword" class="em">Şifre</label>
+      </div>
+      <div class="form-floating pt-3 pb-2">
+        <textarea
+          class="form-control text-white bg-dark"
+          placeholder="Buraya bir yorum bırakın"
+          id="floatingTextarea2"
+          style="height: 100px"
+        ></textarea>
+        <label for="floatingTextarea2" class="em">Yorumlar</label>
+      </div>
+      <button type="button" class="btn m-1 btn-outline-secondary">
+        Mesajınızı Gönderin!
+      </button>
+    </div>
+    <script src="../scripts/login.js" defer></script>
+    <script src="../scripts/contact.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>
